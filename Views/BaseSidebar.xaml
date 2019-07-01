@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Phone_book.Views.BaseSidebar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <StackPanel
+              Background="BlueViolet"
+            Orientation="Vertical">
+        <Button
+                Padding="10"
+                HorizontalAlignment="Stretch"
+                Background="White"
+                Command="{Binding NavigateToPage}"
+                CommandParameter="Page1"
+                Content="Lista de Usuários" />
+        <Button
+                Padding="10"
+                HorizontalAlignment="Stretch"
+                Background="White"
+                Command="{Binding NavigateToPage}"
+                CommandParameter="Page2"
+                Content="Cadastrar Usuário" />
+    </StackPanel>
+</UserControl>
